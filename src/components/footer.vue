@@ -1,29 +1,23 @@
 <template>
-  <div class="tab">
-    <div class="tab-item" v-for="">
-      <router-link></router-link>
-    </div>
+  <div class="tabBar">
+    <router-link v-for="item in footList" :key="item.id" :to="item.linkTo" class="item" :class="{active:item.isActive}">
+      <div class="tab-item">
+        <i><span></span></i>
+        <span></span>
+      </div>
+    </router-link>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-  import header from 'components/header/header';
-  import axios from 'axios';
-  const ERR_OK = 0;
+  import {mapGetters} from 'vuex';
   export default {
-    data() {
-      return {
-        seller: {}
-      };
+    methods: {
+      activethis (id) {
+        this.$store.dispatch('changeActive', id);
+      }
     },
-    created() {
-      axios.get('static/data.json').then((res) => {
-        this.seller = res.data.seller;
-      });
-    },
-    components: {
-      'v-header': header
-    }
+    computed: mapGetters(['footList', 'allNum'])
   };
 </script>
 
