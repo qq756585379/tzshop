@@ -8,35 +8,42 @@ const state = {
       name: '首页',
       itemClass: 'u-icon-tabBar-index',
       activeClass: 'u-icon-tabBar-index-active',
-      linkTo: '/'
+      linkTo: '/home'
     },
     {
       id: 1,
       isActive: false,
-      name: '专题',
-      itemClass: 'u-icon-tabBar-index',
+      name: '品牌',
+      itemClass: 'u-icon-tabBar-brand',
       activeClass: 'u-icon-tabBar-index-active',
-      linkTo: '/'
+      linkTo: '/brand'
     },
-    {id: 2, isActive: false, name: '分类', activeClass: 'u-icon-tabBar-cate u-icon-tabBar-cate-active', linkTo: '/type'},
+    {
+      id: 2,
+      isActive: false,
+      name: '直播',
+      itemClass: 'u-icon-tabBar-live',
+      activeClass: 'u-icon-tabBar-index-active',
+      linkTo: '/live'
+    },
     {
       id: 3,
       isActive: false,
       name: '购物车',
-      itemClass: 'u-icon-tabBar-index',
+      itemClass: 'u-icon-tabBar-shopcart',
       activeClass: 'u-icon-tabBar-index-active',
-      linkTo: '/'
+      linkTo: '/shopcart'
     },
     {
       id: 4,
       isActive: false,
       name: '个人',
-      itemClass: 'u-icon-tabBar-index',
+      itemClass: 'u-icon-tabBar-my',
       activeClass: 'u-icon-tabBar-index-active',
-      linkTo: '/'
+      linkTo: '/my'
     }
   ],
-  allNum: ['0', '0']
+  allNum: '1'
 };
 
 const actions = {

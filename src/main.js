@@ -19,3 +19,5 @@ new Vue({
   template: '<App/>',
   components: { App }
 });
+
+router.push('/home');
