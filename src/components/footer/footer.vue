@@ -3,7 +3,7 @@
     <router-link v-for="item in footList" :key="item.id" :to="item.linkTo">
       <div class="tab-item">
         <i :class="item.itemClass" class="common_i">
-          <span class="badge" v-if="allNum!=0&&item.id===3">{{allNum}}</span>
+          <span class="badge" :class="{ bigNum: allNum>99 }" v-if="allNum!=0&&item.id===3">{{allNum}}</span>
         </i>
         <span>{{item.name}}</span>
       </div>
@@ -65,12 +65,13 @@
           display: block;
           position: relative;
           text-align: center;
-          width: 35px;
-          height: 35px;
+          width: 32px;
+          height: 32px;
           margin: 0 auto;
-          background-size: 35px 35px;
+          background-size: 32px 32px;
           background-repeat: no-repeat;
           .badge {
+            text-align: center;
             position: absolute;
             display: block;
             width: 16px;
@@ -78,10 +79,13 @@
             line-height: 16px;
             background-color: red;
             color: white;
-            font-size: 10px;
+            font-size: 8px;
             top: 0;
             right: -5px;
             border-radius: 8px;
+            &.bigNum{
+              font-size: 8px;
+            }
           }
         }
         .u-icon-tabBar-index {
@@ -101,7 +105,7 @@
         }
         & > span {
           position: absolute;
-          bottom: 0;
+          bottom: 3px;
           left: 0;
           width: 100%;
           height: 12px;

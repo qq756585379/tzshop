@@ -5,10 +5,13 @@ import Vuex from 'vuex';
 import App from './App';
 import router from './router';
 import store from './vuex/store';
+// 轮播图插件 https://www.npmjs.com/package/vue-awesome-swiper
+import VueAwesomeSwiper from 'vue-awesome-swiper';
 
 Vue.config.productionTip = false;
 
 Vue.use(Vuex);
+Vue.use(VueAwesomeSwiper);
 
 /* eslint-disable no-new */
 new Vue({
