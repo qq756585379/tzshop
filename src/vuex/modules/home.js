@@ -2,43 +2,43 @@ const state = {
   bannerList: [
     {
       id: 0,
-      itemClass: 'banner0',
-      linkTo: '/home'
+      linkTo: '/home',
+      imgSrc: require('../../pages/home/images/1@2x.png')
     },
     {
       id: 1,
-      itemClass: 'banner1',
-      linkTo: '/brand'
+      linkTo: '/brand',
+      imgSrc: require('../../pages/home/images/2@2x.png')
     },
     {
       id: 2,
-      itemClass: 'banner2',
-      linkTo: '/live'
+      linkTo: '/live',
+      imgSrc: require('../../pages/home/images/3@2x.png')
     },
     {
       id: 3,
-      itemClass: 'banner3',
-      linkTo: '/shopcart'
+      linkTo: '/shopcart',
+      imgSrc: require('../../pages/home/images/4@2x.png')
     },
     {
       id: 4,
-      itemClass: 'banner4',
-      linkTo: '/my'
-    },
-    {
-      id: 5,
-      itemClass: 'banner5',
-      linkTo: '/my'
+      linkTo: '/my',
+      imgSrc: require('../../pages/home/images/5@2x.png')
     }
   ],
   swiperOption: {
-    autoplay: 3500,
-    setWrapperSize: true,
+    notNextTick: true,
+    autoplay: 1000,
+    autoplayDisableOnInteraction: false,
     pagination: '.swiper-pagination',
     paginationClickable: true,
+    centeredSlides: true,
+    autoHeight: true,
     mousewheelControl: true,
     observeParents: true,
-    loop: true
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 30
   }
 };
 

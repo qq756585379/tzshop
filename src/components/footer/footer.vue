@@ -31,6 +31,7 @@
     height: 49px;
     line-height: 49px;
     border-top: solid 1px #ededed;
+    background-color: white;
     & > a {
       flex: 1;
       text-align: center;
