@@ -45,4 +45,10 @@ npm run e2e
 npm test
 ```
 
+### eslint配置
+```
+// semi always强制加分号,必须加分号，不然报错
+'semi': ['error','always']
+```
+
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
