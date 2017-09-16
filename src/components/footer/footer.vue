@@ -38,6 +38,7 @@
       display: block;
       font-size: 14px;
       color: rgb(77, 85, 93);
+      height: 100%;
       &.router-link-active {
         color: #333;
         .tab-item {
@@ -88,6 +89,7 @@
               font-size: 8px;
             }
           }
+
         }
         .u-icon-tabBar-index {
           @include bg-image('images/home');

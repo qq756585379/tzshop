@@ -1,5 +1,7 @@
 # tzshop
 
+## 效果图
+![Image text](./tzshop.gif)
 
 ```
 vue init webpack your-projectName

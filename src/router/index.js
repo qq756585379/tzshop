@@ -1,12 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-
 import tabvc from '@/pages/tabvc/tabvc';
 import home from '@/pages/home/home';
 import brand from '@/pages/brand/brand';
 import live from '@/pages/live/live';
 import shopcart from '@/pages/shopcart/shopcart';
 import my from '@/pages/my/my';
+import showpic from '@/pages/showpic/showpic';
 
 Vue.use(Router);
 
@@ -16,11 +16,13 @@ export default new Router({
       path: '/',
       name: 'tabvc',
       component: tabvc,
+      meta: {scrollTop: true},
       children: [
         {
           path: '/home',
           name: 'home',
-          component: home
+          component: home,
+          meta: {scrollTop: true}
         },
         {
           path: '/brand',
@@ -43,6 +45,12 @@ export default new Router({
           component: my
         }
       ]
+    },
+    {
+      path: '/showpic',
+      name: 'showpic',
+      component: showpic,
+      meta: {scrollTop: true}
     }
   ]
 });

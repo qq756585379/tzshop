@@ -1,33 +1,8 @@
 .home {
   position: relative;
-  .nav-head {
-    height: 50px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    i {
-      display: inline-block;
-      width: 78px;
-      height: 20px;
-      background-size: 78px 20px;
-      @include bg-image('images/tuzi_word');
-      margin: 15px auto;
-    }
-    a {
-      display: inline-block;
-      width: 21px;
-      height: 21px;
-      background-size: 21px 21px;
-      @include bg-image('images/search');
-      margin: 15px;
-      position: absolute;
-      right: 10px;
-    }
-  }
+  background-color: #ededed;
+  margin-bottom: 69px;
   .swiper-container {
-    margin-top: 50px;
     position: relative;
     .swiper-wrapper {
       .swiper-slide {
@@ -66,6 +41,72 @@
           background: #fff;
         }
       }
+    }
+  }
+  .zhubo {
+    height: 90px;
+    display: flex;
+    background-color: white;
+    & > a {
+      flex: 1;
+      display: inline-block;
+      text-align: center;
+      .zhubo_common_i {
+        display: block;
+        position: relative;
+        text-align: center;
+        width: 60px;
+        height: 60px;
+        margin: 5px auto;
+        background-size: 60px 60px;
+        background-repeat: no-repeat;
+        border-radius: 30px;
+        &.zhubo1 {
+          @include bg-image('images/i01');
+        }
+        &.zhubo2 {
+          @include bg-image('images/i02');
+        }
+        &.zhubo3 {
+          @include bg-image('images/i03');
+        }
+        &.zhubo4 {
+          @include bg-image('images/i04');
+        }
+      }
+      span {
+        display: block;
+        font-size: 12px;
+      }
+
+    }
+  }
+  .youhuiquan {
+    height: 90px;
+    background-color: white;
+    margin: 10px 0;
+    border: solid 1px white;
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      i {
+        display: block;
+        width: 92%;
+        height: 82px;
+        margin: 4px auto;
+        @include bg-image('images/shoping_vouchers');
+        background-size: 100% 82px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  & > ul {
+    margin-top: 10px;
+    background-color: white;
+    li {
+      margin-bottom: 10px;
     }
   }
 }

@@ -1,11 +1,5 @@
 <template>
   <div class="home">
-
-    <nav class="nav-head">
-      <i></i>
-      <router-link to="/search"></router-link>
-    </nav>
-
     <swiper ref="mySwiper" :options="swiperOption">
       <swiper-slide v-for="slide in bannerList" :key="slide.id">
         <router-link :to="slide.linkTo">
@@ -15,18 +9,75 @@
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
 
+    <div class="zhubo">
+      <router-link v-for="item in zhuboList" :key="item.id" :to="item.linkTo">
+        <i :class="item.itemClass" class="zhubo_common_i"></i>
+        <span>{{item.name}}</span>
+      </router-link>
+    </div>
+
+    <div class="youhuiquan">
+      <router-link to="/">
+        <i></i>
+      </router-link>
+    </div>
+
+    <cell1 :cell1Data="cell1Data" :index="index"></cell1>
+
+    <ul>
+      <li v-for="(item,index) in jinxuanList">
+        <router-link :to="{path: 'showpic',query: {id: item.id}}">
+          <cell2 :cell2Data="item" :index="index"></cell2>
+        </router-link>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   import {mapGetters} from 'vuex';
   import {swiper, swiperSlide} from 'vue-awesome-swiper';
+  import cell1 from '@/components/Cell/cell1';
+  import cell2 from '@/components/Cell/cell2';
   require('swiper/dist/css/swiper.css');
   export default {
-    computed: mapGetters(['bannerList', 'swiperOption']),
+    data() {
+      return {
+        index: 0,
+        cell1Data: {
+          id: 0,
+          des: '主播被你玩坏了',
+          imgSrc: require('./images/video@3x.png'),
+          linkTo: '/'
+        },
+        swiperOption: {
+          notNextTick: true,
+          autoplay: 1000,
+          autoplayDisableOnInteraction: false,
+          pagination: '.swiper-pagination',
+          paginationClickable: true,
+          centeredSlides: true,
+          autoHeight: true,
+          mousewheelControl: true,
+          observer: true,
+          observeParents: true,
+          loop: true,
+          slidesPerView: 'auto',
+          spaceBetween: 30
+        }
+      };
+    },
+    computed: mapGetters(['bannerList', 'zhuboList', 'jinxuanList']),
+    methods: {
+      selectMenu(index, event) {
+
+      }
+    },
     components: {
       swiper,
-      swiperSlide
+      swiperSlide,
+      cell1,
+      cell2
     }
   };
 </script>
