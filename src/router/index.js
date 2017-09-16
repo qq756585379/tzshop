@@ -16,13 +16,11 @@ export default new Router({
       path: '/',
       name: 'tabvc',
       component: tabvc,
-      meta: {scrollTop: true},
       children: [
         {
           path: '/home',
           name: 'home',
-          component: home,
-          meta: {scrollTop: true}
+          component: home
         },
         {
           path: '/brand',
