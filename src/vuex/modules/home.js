@@ -28,28 +28,28 @@ const state = {
   ],
   zhuboList: [
     {
-      itemClass: 'zhubo1',
       name: '嫣儿',
       id: 0,
-      linkTo: '/'
+      linkTo: '/',
+      imgSrc: require('../../pages/home/images/i01@3x.png')
     },
     {
-      itemClass: 'zhubo2',
       name: '三七',
       id: 1,
-      linkTo: '/'
+      linkTo: '/',
+      imgSrc: require('../../pages/home/images/i02@3x.png')
     },
     {
-      itemClass: 'zhubo3',
       name: '菓九九',
       id: 2,
-      linkTo: '/'
+      linkTo: '/',
+      imgSrc: require('../../pages/home/images/i03@3x.png')
     },
     {
-      itemClass: 'zhubo4',
       name: '黛鑫鑫',
       id: 3,
-      linkTo: '/'
+      linkTo: '/',
+      imgSrc: require('../../pages/home/images/i04@3x.png')
     }
   ],
   jinxuanList: [

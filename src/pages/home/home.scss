@@ -51,34 +51,16 @@
       flex: 1;
       display: inline-block;
       text-align: center;
-      .zhubo_common_i {
-        display: block;
-        position: relative;
-        text-align: center;
+      img {
         width: 60px;
         height: 60px;
         margin: 5px auto;
-        background-size: 60px 60px;
-        background-repeat: no-repeat;
         border-radius: 30px;
-        &.zhubo1 {
-          @include bg-image('./images/i01');
-        }
-        &.zhubo2 {
-          @include bg-image('./images/i02');
-        }
-        &.zhubo3 {
-          @include bg-image('./images/i03');
-        }
-        &.zhubo4 {
-          @include bg-image('./images/i04');
-        }
       }
       span {
         display: block;
         font-size: 12px;
       }
-
     }
   }
   .youhuiquan {
@@ -95,9 +77,6 @@
         width: 92%;
         height: 82px;
         margin: 4px auto;
-        //@include bg-image('./images/shoping_vouchers');
-        //background-size: 100% 82px;
-        //background-repeat: no-repeat;
       }
     }
   }

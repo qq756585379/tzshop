@@ -11,7 +11,7 @@
 
     <div class="zhubo">
       <router-link v-for="item in zhuboList" :key="item.id" :to="item.linkTo">
-        <i :class="item.itemClass" class="zhubo_common_i"></i>
+        <img :src="item.imgSrc">
         <span>{{item.name}}</span>
       </router-link>
     </div>
@@ -47,7 +47,8 @@
           id: 0,
           des: '主播被你玩坏了',
           imgSrc: require('./images/video@3x.png'),
-          linkTo: '/'
+          linkTo: '/',
+          user_icon: require('./images/head@3x.png')
         },
         youhuiquandata: {
           imgSrc: require('./images/shoping_vouchers@3x.png')

@@ -4,7 +4,7 @@
       <i></i><span>今日推荐</span>
     </div>
     <div class="row_header" v-if="cell1Data.headData">
-      <i class="icon"></i>
+      <img :src="cell1Data.user_icon">
       <span class="title">{{cell1Data.headData.title}}</span>
       <span class="subtitle">播放{{cell1Data.headData.playnum}}次</span>
       <div class="positionWrap">
@@ -67,15 +67,11 @@
     .row_header {
       height: 60px;
       position: relative;
-      .icon {
-        display: block;
+      img {
         float: left;
         height: 50px;
         width: 50px;
         margin: 5px 10px;
-        @include bg-image('./images/head');
-        background-size: 50px 50px;
-        background-repeat: no-repeat;
       }
       .title {
         color: #333333;
