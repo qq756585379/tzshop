@@ -1,6 +1,7 @@
 # tzshop
 
 ## 效果图
+![手机扫码](./code.png)
 ![Image text](./tzshop.gif)
 
 ```
