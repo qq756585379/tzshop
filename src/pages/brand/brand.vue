@@ -31,7 +31,7 @@
         width: 78px;
         height: 20px;
         background-size: 78px 20px;
-        @include bg-image('images/tuzi_word');
+        @include bg-image('./images/tuzi_word');
         margin: 15px auto;
       }
       a {
@@ -39,7 +39,7 @@
         width: 21px;
         height: 21px;
         background-size: 21px 21px;
-        @include bg-image('images/search');
+        @include bg-image('./images/search');
         margin: 15px;
         position: absolute;
         right: 10px;

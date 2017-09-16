@@ -44,7 +44,7 @@
         height: 13px;
         width: 15px;
         margin: 8px 0;
-        @include bg-image('images/Featured');
+        @include bg-image('./images/Featured');
         background-size: 15px 13px;
         background-repeat: no-repeat;
       }

@@ -30,7 +30,8 @@ export default new Router({
         {
           path: '/live',
           name: 'live',
-          component: live
+          component: live,
+          meta: {scrollTop: true}
         },
         {
           path: '/shopcart',
@@ -47,8 +48,8 @@ export default new Router({
     {
       path: '/showpic',
       name: 'showpic',
-      component: showpic,
-      meta: {scrollTop: true}
+      component: showpic
+      // meta: {scrollTop: true}
     }
   ]
 });

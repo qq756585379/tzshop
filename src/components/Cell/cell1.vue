@@ -50,7 +50,7 @@
         height: 20px;
         width: 15px;
         margin: 5px 0;
-        @include bg-image('images/tuijian');
+        @include bg-image('./images/tuijian');
         background-size: 15px 20px;
         background-repeat: no-repeat;
       }
@@ -73,7 +73,7 @@
         height: 50px;
         width: 50px;
         margin: 5px 10px;
-        @include bg-image('images/head');
+        @include bg-image('./images/head');
         background-size: 50px 50px;
         background-repeat: no-repeat;
       }
@@ -99,7 +99,7 @@
           display: block;
           height: 17px;
           width: 12px;
-          @include bg-image('images/location');
+          @include bg-image('./images/location');
           background-size: 12px 17px;
           background-repeat: no-repeat;
         }
@@ -129,7 +129,7 @@
         display: block;
         height: 70px;
         width: 70px;
-        @include bg-image('images/Playkey');
+        @include bg-image('./images/Playkey');
         background-size: 70px 70px;
         background-repeat: no-repeat;
         position: absolute;
@@ -142,7 +142,7 @@
         display: block;
         height: 15px;
         width: 42px;
-        @include bg-image('images/live_tag');
+        @include bg-image('./images/live_tag');
         background-size: 42px 15px;
         background-repeat: no-repeat;
         position: absolute;

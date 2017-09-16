@@ -43,19 +43,19 @@
         color: #333;
         .tab-item {
           .u-icon-tabBar-index {
-            @include bg-image('images/home_click');
+            @include bg-image('./images/home_click');
           }
           .u-icon-tabBar-brand {
-            @include bg-image('images/brand_selected');
+            @include bg-image('./images/brand_selected');
           }
           .u-icon-tabBar-live {
-            @include bg-image('images/liveselected');
+            @include bg-image('./images/liveselected');
           }
           .u-icon-tabBar-shopcart {
-            @include bg-image('images/shopping_card_selected');
+            @include bg-image('./images/shopping_card_selected');
           }
           .u-icon-tabBar-my {
-            @include bg-image('images/my_selected');
+            @include bg-image('./images/my_selected');
           }
         }
       }
@@ -92,19 +92,19 @@
 
         }
         .u-icon-tabBar-index {
-          @include bg-image('images/home');
+          @include bg-image('./images/home');
         }
         .u-icon-tabBar-brand {
-          @include bg-image('images/brand');
+          @include bg-image('./images/brand');
         }
         .u-icon-tabBar-live {
-          @include bg-image('images/live');
+          @include bg-image('./images/live');
         }
         .u-icon-tabBar-shopcart {
-          @include bg-image('images/shopping');
+          @include bg-image('./images/shopping');
         }
         .u-icon-tabBar-my {
-          @include bg-image('images/my');
+          @include bg-image('./images/my');
         }
         & > span {
           position: absolute;
