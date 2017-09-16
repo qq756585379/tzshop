@@ -46,12 +46,12 @@
         cell1Data: {
           id: 0,
           des: '主播被你玩坏了',
-          imgSrc: require('./images/video@3x.png'),
+          imgSrc: require('./images/video@2x.png'),
           linkTo: '/',
-          user_icon: require('./images/head@3x.png')
+          user_icon: require('./images/head@2x.png')
         },
         youhuiquandata: {
-          imgSrc: require('./images/shoping_vouchers@3x.png')
+          imgSrc: require('./images/shoping_vouchers@2x.png')
         },
         swiperOption: {
           notNextTick: true,

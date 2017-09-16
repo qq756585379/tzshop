@@ -4,8 +4,8 @@ const state = {
       cell1Data: {
         id: 0,
         des: '主播被你玩坏了',
-        imgSrc: require('../../pages/home/images/video@3x.png'),
-        user_icon: require('../../pages/home/images/head@3x.png'),
+        imgSrc: require('../../pages/home/images/video@2x.png'),
+        user_icon: require('../../pages/home/images/head@2x.png'),
         linkTo: '/',
         headData: {
           title: '直播带你玩狗屎',
@@ -20,8 +20,8 @@ const state = {
       cell1Data: {
         id: 1,
         des: '主播被你玩死了',
-        imgSrc: require('../../pages/home/images/video@3x.png'),
-        user_icon: require('../../pages/home/images/head@3x.png'),
+        imgSrc: require('../../pages/home/images/video@2x.png'),
+        user_icon: require('../../pages/home/images/head@2x.png'),
         linkTo: '/',
         headData: {
           title: '直播熊抱2017',
@@ -36,8 +36,8 @@ const state = {
       cell1Data: {
         id: 2,
         des: '主播被你玩废了',
-        imgSrc: require('../../pages/home/images/video@3x.png'),
-        user_icon: require('../../pages/home/images/head@3x.png'),
+        imgSrc: require('../../pages/home/images/video@2x.png'),
+        user_icon: require('../../pages/home/images/head@2x.png'),
         linkTo: '/',
         headData: {
           title: '直播带你玩',
@@ -52,8 +52,8 @@ const state = {
       cell1Data: {
         id: 3,
         des: '主播被你玩翘翘了',
-        imgSrc: require('../../pages/home/images/video@3x.png'),
-        user_icon: require('../../pages/home/images/head@3x.png'),
+        imgSrc: require('../../pages/home/images/video@2x.png'),
+        user_icon: require('../../pages/home/images/head@2x.png'),
         linkTo: '/',
         headData: {
           title: '直播带你玩',
@@ -68,8 +68,8 @@ const state = {
       cell1Data: {
         id: 4,
         des: '主播被你玩烂了',
-        imgSrc: require('../../pages/home/images/video@3x.png'),
-        user_icon: require('../../pages/home/images/head@3x.png'),
+        imgSrc: require('../../pages/home/images/video@2x.png'),
+        user_icon: require('../../pages/home/images/head@2x.png'),
         linkTo: '/',
         headData: {
           title: '直播带你玩',

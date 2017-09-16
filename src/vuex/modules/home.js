@@ -3,27 +3,27 @@ const state = {
     {
       id: 0,
       linkTo: '/home',
-      imgSrc: require('../../pages/home/images/1@3x.png')
+      imgSrc: require('../../pages/home/images/1@2x.png')
     },
     {
       id: 1,
       linkTo: '/brand',
-      imgSrc: require('../../pages/home/images/2@3x.png')
+      imgSrc: require('../../pages/home/images/2@2x.png')
     },
     {
       id: 2,
       linkTo: '/live',
-      imgSrc: require('../../pages/home/images/3@3x.png')
+      imgSrc: require('../../pages/home/images/3@2x.png')
     },
     {
       id: 3,
       linkTo: '/shopcart',
-      imgSrc: require('../../pages/home/images/4@3x.png')
+      imgSrc: require('../../pages/home/images/4@2x.png')
     },
     {
       id: 4,
       linkTo: '/my',
-      imgSrc: require('../../pages/home/images/5@3x.png')
+      imgSrc: require('../../pages/home/images/5@2x.png')
     }
   ],
   zhuboList: [
@@ -31,25 +31,25 @@ const state = {
       name: '嫣儿',
       id: 0,
       linkTo: '/',
-      imgSrc: require('../../pages/home/images/i01@3x.png')
+      imgSrc: require('../../pages/home/images/i01@2x.png')
     },
     {
       name: '三七',
       id: 1,
       linkTo: '/',
-      imgSrc: require('../../pages/home/images/i02@3x.png')
+      imgSrc: require('../../pages/home/images/i02@2x.png')
     },
     {
       name: '菓九九',
       id: 2,
       linkTo: '/',
-      imgSrc: require('../../pages/home/images/i03@3x.png')
+      imgSrc: require('../../pages/home/images/i03@2x.png')
     },
     {
       name: '黛鑫鑫',
       id: 3,
       linkTo: '/',
-      imgSrc: require('../../pages/home/images/i04@3x.png')
+      imgSrc: require('../../pages/home/images/i04@2x.png')
     }
   ],
   jinxuanList: [
