@@ -18,11 +18,11 @@
 
     <div class="youhuiquan">
       <router-link to="/">
-        <i></i>
+        <img :src="youhuiquandata.imgSrc">
       </router-link>
     </div>
 
-    <cell1 :cell1Data="cell1Data" :index="index"></cell1>
+    <cell1 :cell1Data="cell1Data" :index="0"></cell1>
 
     <ul>
       <li v-for="(item,index) in jinxuanList">
@@ -43,12 +43,14 @@
   export default {
     data() {
       return {
-        index: 0,
         cell1Data: {
           id: 0,
           des: '主播被你玩坏了',
           imgSrc: require('./images/video@3x.png'),
           linkTo: '/'
+        },
+        youhuiquandata: {
+          imgSrc: require('./images/shoping_vouchers@3x.png')
         },
         swiperOption: {
           notNextTick: true,
@@ -68,11 +70,6 @@
       };
     },
     computed: mapGetters(['bannerList', 'zhuboList', 'jinxuanList']),
-    methods: {
-      selectMenu(index, event) {
-
-      }
-    },
     components: {
       swiper,
       swiperSlide,

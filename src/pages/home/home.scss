@@ -91,14 +91,13 @@
       height: 100%;
       width: 100%;
       text-align: center;
-      i {
-        display: block;
+      img {
         width: 92%;
         height: 82px;
         margin: 4px auto;
-        @include bg-image('./images/shoping_vouchers');
-        background-size: 100% 82px;
-        background-repeat: no-repeat;
+        //@include bg-image('./images/shoping_vouchers');
+        //background-size: 100% 82px;
+        //background-repeat: no-repeat;
       }
     }
   }

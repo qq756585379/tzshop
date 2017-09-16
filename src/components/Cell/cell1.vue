@@ -122,8 +122,10 @@
     }
     .content {
       position: relative;
+      height: 210px;
       img {
         width: 100%;
+        height: 100%;
       }
       a:first-of-type {
         display: block;
