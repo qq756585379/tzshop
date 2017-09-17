@@ -1,0 +1,140 @@
+.my {
+  position: relative;
+  background-color: #ededed;
+  .nav-head {
+    height: 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    font-size: 20px;
+    line-height: 50px;
+    @include border-1px(rgba(7, 17, 27, 0.1));
+  }
+  .section0 {
+    height: 80px;
+    background-color: white;
+    a {
+      div:first-of-type {
+        width: 19%;
+        display: inline-block;
+        float: left;
+        img {
+          width: 50px;
+          border-radius: 25px;
+          margin: 15px 10px;
+        }
+      }
+      div:last-of-type {
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 80%;
+        height: 100%;
+        font-size: 14px;
+        p:first-of-type {
+          margin-top: 20px;
+        }
+        p:last-of-type {
+          margin-top: 10px;
+        }
+        i {
+          display: block;
+          width: 7px;
+          height: 12px;
+          float: right;
+          @include bg-image('./images/more');
+          background-size: 7px 12px;
+          background-repeat: no-repeat;
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          margin-top: -6px;
+        }
+      }
+    }
+  }
+  .section1 {
+    margin-top: 10px;
+    height: 100px;
+    border: solid 1px white;
+    background-color: white;
+    div:first-of-type {
+      margin: 10px 10px;
+      span:first-of-type {
+        color: #333333;
+        font-size: 13px;
+        line-height: 100%;
+      }
+      i {
+        display: block;
+        width: 7px;
+        height: 12px;
+        float: right;
+        @include bg-image('./images/more');
+        background-size: 7px 12px;
+        background-repeat: no-repeat;
+        margin-left: 5px;
+      }
+      span:last-of-type {
+        color: darkgrey;
+        font-size: 13px;
+        float: right;
+        line-height: 100%;
+      }
+    }
+    div:last-of-type {
+      display: flex;
+      a {
+        flex: 1;
+        display: inline-block;
+        text-align: center;
+        margin-top: 10px;
+        img {
+          width: 35px;
+          height: 28px;
+        }
+        span {
+          display: block;
+          font-size: 12px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  .section2 {
+    margin-top: 10px;
+    background-color: white;
+    font-size: 14px;
+    ul {
+      li {
+        @include border-1px(rgba(7, 17, 27, 0.1));
+        div {
+          width: 99%;
+          height: 44px;
+          span {
+            float: left;
+            display: inline-block;
+            margin: 0 10px;
+            height: 44px;
+            line-height: 44px;
+          }
+          .tel {
+            float: right;
+          }
+          i {
+            display: block;
+            width: 7px;
+            height: 12px;
+            float: right;
+            @include bg-image('./images/more');
+            background-size: 7px 12px;
+            background-repeat: no-repeat;
+            margin: 16px 10px;
+          }
+        }
+      }
+    }
+  }
+}

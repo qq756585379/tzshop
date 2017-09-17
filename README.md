@@ -1,8 +1,11 @@
 # tzshop
 
-## 效果图
-![手机扫码](./code.png)
-![Image text](./tzshop.gif)
+## 效果图手机扫二维码观看
+![Image text](./images/tzshop.gif)
+![手机扫码](./code.png) 
+![Image text](./images/1.png)
+![Image text](./images/2.png)
+![Image text](./images/3.png)
 
 ```
 vue init webpack your-projectName

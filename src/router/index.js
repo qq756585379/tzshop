@@ -16,6 +16,7 @@ export default new Router({
       path: '/',
       name: 'tabvc',
       component: tabvc,
+      redirect: '/home',
       children: [
         {
           path: '/home',
