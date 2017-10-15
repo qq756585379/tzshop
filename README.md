@@ -1,8 +1,8 @@
 # tzshop
 
 ## 效果图手机扫二维码观看
-![Image text](./images/tzshop.gif)
 ![手机扫码](./code.png) 
+![Image text](./images/tzshop.gif)
 ![Image text](./images/1.png)
 ![Image text](./images/2.png)
 ![Image text](./images/3.png)
@@ -21,8 +21,8 @@ npm install node-sass --save-dev
 npm install stylus --save-dev
 npm install stylus-loader --save-dev
 
-npm install axios --save
-npm install vuex --save
+npm install axios --save-dev
+npm install vuex -D
 
 # 轮播图插件
 npm i vue-awesome-swiper -S

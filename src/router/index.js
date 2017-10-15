@@ -11,6 +11,9 @@ import showpic from '@/pages/showpic/showpic';
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
+  base: '/',
+  scrollBehavior: () => ({y: 0}),
   routes: [
     {
       path: '/',
@@ -50,7 +53,6 @@ export default new Router({
       path: '/showpic',
       name: 'showpic',
       component: showpic
-      // meta: {scrollTop: true}
     }
   ]
 });
