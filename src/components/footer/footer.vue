@@ -85,11 +85,10 @@
             top: 0;
             right: -5px;
             border-radius: 8px;
-            &.bigNum{
+            &.bigNum {
               font-size: 8px;
             }
           }
-
         }
         .u-icon-tabBar-index {
           @include bg-image('./images/home');

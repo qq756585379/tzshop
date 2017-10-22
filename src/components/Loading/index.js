@@ -1,7 +1,3 @@
-/**
- * Created by yangjun on 2017/10/15.
- */
-
 // http://d.lanrentuku.com/down/js/qita-1191/
 import LoadingComponent from './Loading.vue';
 

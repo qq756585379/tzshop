@@ -42,7 +42,6 @@
   import {swiper, swiperSlide} from 'vue-awesome-swiper';
   import cell1 from '@/components/Cell/cell1';
   import cell2 from '@/components/Cell/cell2';
-
   require('swiper/dist/css/swiper.css');
   export default {
     data() {
