@@ -24,14 +24,14 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     // semi always强制加分号,必须加分号，不然报错
-    'semi': ['error','always'],
+    'semi': ['error', 'always'],
     'no-tabs': 0,
     // 取消空格的代码检查
     'indent': 0,
     // 关闭对空行的代码检查
     'space-before-function-paren': 0,
-    'no-unused-vars':0,
-    'no-undef':0,
-    'no-new':0
+    'no-unused-vars': 0,
+    'no-undef': 0,
+    'no-new': 0
   }
 };

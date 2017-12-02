@@ -22,7 +22,7 @@ npm install stylus --save-dev
 npm install stylus-loader --save-dev
 
 npm install axios --save-dev
-npm install vuex -D
+npm i vuex -S
 
 # 轮播图插件
 npm i vue-awesome-swiper -S
