@@ -43,19 +43,19 @@
         color: #333;
         .tab-item {
           .u-icon-tabBar-index {
-            @include bg-image('./images/home_click');
+            @include bg-image('../../assets/images/footer/home_click');
           }
           .u-icon-tabBar-brand {
-            @include bg-image('./images/brand_selected');
+            @include bg-image('../../assets/images/footer/brand_selected');
           }
           .u-icon-tabBar-live {
-            @include bg-image('./images/liveselected');
+            @include bg-image('../../assets/images/footer/liveselected');
           }
           .u-icon-tabBar-shopcart {
-            @include bg-image('./images/shopping_card_selected');
+            @include bg-image('../../assets/images/footer/shopping_card_selected');
           }
           .u-icon-tabBar-my {
-            @include bg-image('./images/my_selected');
+            @include bg-image('../../assets/images/footer/my_selected');
           }
         }
       }
@@ -91,19 +91,19 @@
           }
         }
         .u-icon-tabBar-index {
-          @include bg-image('./images/home');
+          @include bg-image('../../assets/images/footer/home');
         }
         .u-icon-tabBar-brand {
-          @include bg-image('./images/brand');
+          @include bg-image('../../assets/images/footer/brand');
         }
         .u-icon-tabBar-live {
-          @include bg-image('./images/live');
+          @include bg-image('../../assets/images/footer/live');
         }
         .u-icon-tabBar-shopcart {
-          @include bg-image('./images/shopping');
+          @include bg-image('../../assets/images/footer/shopping');
         }
         .u-icon-tabBar-my {
-          @include bg-image('./images/my');
+          @include bg-image('../../assets/images/footer/my');
         }
         & > span {
           position: absolute;

@@ -23,7 +23,7 @@ new Vue({
   Vuex,
   store,
   template: '<App/>',
-  components: { App }
+  components: {App}
 });
 
 router.push('/home');
